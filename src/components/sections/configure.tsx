@@ -184,6 +184,35 @@ export default component$<ConfigureProps>(({ config }) => {
     <>
       <div class="flex flex-col gap-10 justify-center items-center p-6 w-full min-h-screen">
         <SyncribulletTitle />
+        <div class="flex items-center justify-between gap-4 p-6 w-full max-w-2xl rounded-xl bg-surface/30 backdrop-blur-sm border border-outline/10">
+          <div class="flex items-center gap-3 flex-1 min-w-0">
+            <img src="https://torbox.app/favicon.ico" alt="TorBox Logo" class="w-9 h-9 rounded-lg flex-shrink-0" />
+            <div class="flex-1 min-w-0">
+              <h3 class="text-base font-semibold text-on-surface truncate">
+                Supercharge with TorBox
+              </h3>
+              <p class="text-sm text-on-surface/80">
+                Lightning-fast debrid service
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-2 flex-shrink-0">
+            <a
+              href="https://torbox.app/?referer=aiostreams"
+              target="_blank"
+              class="inline-flex items-center justify-center px-4 py-2 rounded-lg bg-primary/90 text-on-primary font-medium text-xs hover:bg-primary transition-colors whitespace-nowrap"
+            >
+              Purchase
+            </a>
+            <a
+              href="https://ko-fi.com/midnightignite"
+              target="_blank"
+              class="inline-flex items-center justify-center px-4 py-2 rounded-lg bg-surface/40 text-on-surface/70 font-medium text-xs hover:bg-surface/60 transition-colors border border-outline/20 whitespace-nowrap"
+            >
+              ☕ Ko-fi
+            </a>
+          </div>
+        </div>
         <ReceiversSection
           receivers={receivers.value}
           onClick$={(id, type) => {
