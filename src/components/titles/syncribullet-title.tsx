@@ -4,6 +4,7 @@ import { Link } from '@builder.io/qwik-city';
 import { manifest } from '~/utils/manifest';
 
 import { GithubIcon } from '../icons/github';
+import { CoffeeIcon } from '../icons/coffee';
 
 export default component$(() => {
   return (
@@ -23,13 +24,20 @@ export default component$(() => {
         Bullet
         <span class="ml-2 text-base">(v{manifest.version})</span>
       </h1>
-      <div>
+      <div class="flex gap-4">
         <Link
           href="https://github.com/aliyss/syncribullet"
           target="_blank"
           class="text-primary hover:text-white"
         >
           <GithubIcon class="w-8 h-8" />
+        </Link>
+        <Link
+          href="https://www.buymeacoffee.com/aliyss"
+          target="_blank"
+          class="text-primary hover:text-white"
+        >
+          <CoffeeIcon class="w-8 h-8" />
         </Link>
       </div>
     </div>
