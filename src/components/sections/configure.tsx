@@ -198,7 +198,7 @@ export default component$<ConfigureProps>(({ config }) => {
           </div>
           <div class="flex gap-2 flex-shrink-0">
             <a
-              href="https://torbox.app/?referer=aiostreams"
+              href="https://torbox.app/subscription?referral=8937443a-bdb9-426b-9a64-aaf56c12d8dc"
               target="_blank"
               class="inline-flex items-center justify-center px-4 py-2 rounded-lg bg-primary/90 text-on-primary font-medium text-xs hover:bg-primary transition-colors whitespace-nowrap"
             >
